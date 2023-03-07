@@ -58,7 +58,7 @@ jobs:
 
       - name: Unit Test Extractor
         id: unit-test-report-extractor
-        uses: tr8team/actions.test-sources@v1.1.0
+        uses: tr8team/actions.test-sources@v1.1.3
         with:
           name: Unit Test Results
           url: "${{ steps.unit-test-report.outputs.url }}"
@@ -67,7 +67,7 @@ jobs:
 
       - name: Unit Test coverage Extractor
         id: unit-coverage-report-extractor
-        uses: tr8team/actions.test-sources@v1.1.0
+        uses: tr8team/actions.test-sources@v1.1.3
         with:
           name: Unit Test Coverage
           url: "${{ steps.unit-coverage-report.outputs.url }}"
@@ -134,7 +134,7 @@ jobs:
 
       - name: Integration Test Extractor
         id: integration-test-report-extractor
-        uses: tr8team/actions.test-sources@v1.1.0
+        uses: tr8team/actions.test-sources@v1.1.3
         with:
           name: Integration Test Results
           url: "${{ steps.integration-test-report.outputs.url }}"
@@ -143,7 +143,7 @@ jobs:
 
       - name: Integration Test coverage Extractor
         id: integration-coverage-report-extractor
-        uses: tr8team/actions.test-sources@v1.1.0
+        uses: tr8team/actions.test-sources@v1.1.3
         with:
           name: Integration Test Coverage
           url: "${{ steps.integration-coverage-report.outputs.url }}"
